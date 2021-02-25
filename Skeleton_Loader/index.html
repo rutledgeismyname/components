@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Skeleton Phone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Junior front-end web developer currently working in Philadelphia, PA"
+    />
+    <meta
+      name="keywords"
+      content="Chris Rutledge, rutledgeismyname, rutledge, digital developer"
+    />
+    <meta name="author" content="Christopher Rutledge" />
+    <link rel="icon" type="image/png" href="images/fav-cr-icon.png" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="Chris Rutledge" />
+    <meta property="og:image" content="images/fav-cr-icon.png" />
+    <meta property="og:url" content="http://www.rutledgeismyname.com" />
+    <meta property="og:site_name" content="rutledgeismyname.com" />
+    <meta
+      property="og:description"
+      content="Junior Web Developer currently working in Philadelphia, PA"
+    />
+    <meta name="twitter:title" content="Chris Rutledge" />
+    <meta name="twitter:image" content="images/fav-cr-icon.png" />
+    <meta name="twitter:url" content="http://www.rutledgeismyname.com" />
+    <meta name="twitter:card" content="images/fav-cr-icon.png" />
+  </head>
+
+  <style>
+    :root {
+      font-family: arial;
+    }
+    .phone {
+      width: 264px;
+      height: 533px;
+      padding: 8px;
+      border-radius: 36px;
+      box-shadow: 0 50px 100px -20px rgb(50 50 93/ 25%),
+        0 30px 60px -30px rgb(0 0 0 / 30%),
+        inset 0 -2px 6px 0 rgb(10 37 65 / 30%);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      top: 10%;
+      left: 50%;
+      transform: translate(-64%, 0%);
+    }
+
+    .phone__card {
+      display: grid;
+      gap: 0.6rem;
+      padding: 0.8rem;
+      border: 0.1rem solid #d9d9df;
+      border-radius: 0.2rem;
+      margin: 0 0.8rem 0.6rem 0.8rem;
+    }
+    .phone__skeleton {
+      width: 100%;
+      height: 0.5rem;
+      column-count: 2;
+      border-radius: 0.2rem;
+      background-image: linear-gradient(
+        90deg,
+        #d9d9df 0px,
+        #f0f0f5 20px,
+        #d9d9df 100px
+      );
+      background-size: 600px;
+      animation: skeleton-loading 2s infinite ease-out;
+    }
+
+    .phone__skeleton__block__top {
+      width: 50%;
+      height: 1.3rem;
+      border-radius: 0.2rem;
+      background-image: linear-gradient(
+        90deg,
+        #d9d9df 0px,
+        #f0f0f5 20px,
+        #d9d9df 100px
+      );
+      background-size: 600px;
+      animation: skeleton-loading 2s infinite ease-out;
+    }
+    .phone__skeleton__block__bottom {
+      width: 60%;
+      height: 0.9rem;
+      border-radius: 0.2rem;
+      background-image: linear-gradient(
+        90deg,
+        #d9d9df 0px,
+        #f0f0f5 20px,
+        #d9d9df 100px
+      );
+      background-size: 600px;
+      animation: skeleton-loading 2s infinite ease-out;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: -100px;
+      }
+      40%,
+      100% {
+        background-position: 200px;
+      }
+    }
+    .phone__button {
+      background: #07070e;
+      color: #f6f9fc;
+      display: grid;
+      place-items: center;
+      padding: 0.7rem;
+      font-size: 0.8rem;
+      user-select: none;
+      border-radius: 0.2rem;
+      margin: 0 0.8rem;
+      animation: skeleton-loading 2s infinite ease-out;
+    }
+    .phone__button:hover {
+      background: #3c3c3cd6;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    pre code {
+      background-color: #eee;
+      border: 1px solid #999;
+      white-space: pre-line;
+      padding-left: 5px;
+      width: 95%;
+      display: block;
+    }
+    .fa-home {
+      position: fixed;
+      top: 1%;
+      right: 2.5%;
+      color: black;
+    }
+    .fa-home:hover {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.671);
+      transform: scale(1.2);
+      transition: 0.2s;
+    }
+    .fav-icon {
+      position: absolute;
+      top: 1%;
+      left: 2.5%;
+      width: 27px;
+      border-radius: 5px;
+    }
+    .fav-icon:hover {
+      cursor: pointer;
+      transform: rotate(360deg);
+      transition: 0.8s;
+      opacity: 0.9;
+    }
+    .time-stamp {
+      width: 90px;
+      font-size: 11px;
+      color: rgb(145, 145, 145);
+      background-color: rgb(242, 242, 242);
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: inset 1px 1px 2px #ccc;
+      padding: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+    @media only screen and (max-width: 620px) {
+      pre code {
+        width: 88%;
+      }
+    }
+  </style>
+  <body>
+    <a href="http://rutledgeismyname.com/"><i class="fa fa-home fa-2x"></i></a>
+    <a href="http://rutledgeismyname.com/"
+      ><img
+        src="images/fav-cr-icon.png"
+        class="fav-icon"
+        title="Chris Rutledge"
+        alt="Chris Rutledge Logo"
+    /></a>
+    <p style="text-align: center">Simple CSS Skeleton Loader</p>
+    <p class="time-stamp">Posted: 2/10/21</p>
+    <figure class="phone">
+      <div class="phone__card">
+        <div class="phone__skeleton__block__top"></div>
+        <div class="phone__skeleton__block__bottom"></div>
+        <div class="phone__skeleton"></div>
+        <div class="phone__skeleton"></div>
+        <div class="phone__skeleton"></div>
+        <div class="phone__skeleton"></div>
+        <div class="phone__skeleton"></div>
+      </div>
+      <div class="phone__button">Buy Now</div>
+    </figure>
+
+    <p>Code Resource</p>
+
+    <pre>
+      <code>
+        <p style="font-weight: bold;">HTML</p>
+       &lt;figure class="phone"&gt;
+       &lt;div class="phone__card"&gt;
+         &lt;div class="phone__skeleton__block__top"&gt;&lt;/div&gt;
+         &lt;div class="phone__skeleton__block__bottom"&gt;&lt;/div&gt;
+         &lt;div class="phone__skeleton"&gt;&lt;/div&gt;
+         &lt;div class="phone__skeleton"&gt;&lt;/div&gt;
+         &lt;div class="phone__skeleton"&gt;&lt;/div&gt;
+         &lt;div class="phone__skeleton"&gt;&lt;/div&gt;
+         &lt;div class="phone__skeleton"&gt;&lt;/div&gt;
+       &lt;/div&gt;
+       &lt;div class="phone__button"&gt;Buy Now&lt;/div&gt;
+     &lt;/figure&gt;<br>
+     <p style="font-weight: bold;">CSS</p>
+     .phone {
+      width: 264px;
+      height: 533px;
+      padding: 8px;
+      border-radius: 36px;
+      box-shadow: 0 50px 100px -20px rgb(50 50 93/ 25%),
+        0 30px 60px -30px rgb(0 0 0 / 30%),
+        inset 0 -2px 6px 0 rgb(10 37 65 / 30%);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-60%, -10%);
+    }
+
+    .phone__card {
+      display: grid;
+      gap: 0.6rem;
+      padding: 0.8rem;
+      border: 0.1rem solid #d9d9df;
+      border-radius: 0.2rem;
+      margin: 0 0.8rem 0.6rem 0.8rem;
+    }
+    .phone__skeleton {
+      width: 100%;
+      height: 0.5rem;
+      column-count: 2;
+      border-radius: 0.2rem;
+      background-image: linear-gradient(
+        90deg,
+        #d9d9df 0px,
+        #f0f0f5 20px,
+        #d9d9df 100px
+      );
+      background-size: 600px;
+      animation: skeleton-loading 2s infinite ease-out;
+    }
+
+    .phone__skeleton__block__top {
+      width: 50%;
+      height: 1.3rem;
+      border-radius: 0.2rem;
+      background-image: linear-gradient(
+        90deg,
+        #d9d9df 0px,
+        #f0f0f5 20px,
+        #d9d9df 100px
+      );
+      background-size: 600px;
+      animation: skeleton-loading 2s infinite ease-out;
+    }
+    .phone__skeleton__block__bottom {
+      width: 60%;
+      height: 0.9rem;
+      border-radius: 0.2rem;
+      background-image: linear-gradient(
+        90deg,
+        #d9d9df 0px,
+        #f0f0f5 20px,
+        #d9d9df 100px
+      );
+      background-size: 600px;
+      animation: skeleton-loading 2s infinite ease-out;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: -100px;
+      }
+      40%,
+      100% {
+        background-position: 200px;
+      }
+    }
+    .phone__button {
+      background: #07070e;
+      color: #f6f9fc;
+      display: grid;
+      place-items: center;
+      padding: 0.7rem;
+      font-size: 0.8rem;
+      user-select: none;
+      border-radius: 0.2rem;
+      margin: 0 0.8rem;
+      animation: skeleton-loading 2s infinite ease-out;
+    }
+    .phone__button:hover {
+      background: #3c3c3cd6;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+        </code>
+        </pre>
+    <script src="https://use.fontawesome.com/c3d923fb3a.js"></script>
+  </body>
+</html>

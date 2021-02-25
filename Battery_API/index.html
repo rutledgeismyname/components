@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Battery API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Junior front-end web developer currently working in Philadelphia, PA"
+    />
+    <meta
+      name="keywords"
+      content="Chris Rutledge, rutledgeismyname, rutledge, digital developer"
+    />
+    <meta name="author" content="Christopher Rutledge" />
+    <link rel="icon" type="image/png" href="images/fav-cr-icon.png" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="Chris Rutledge" />
+    <meta property="og:image" content="images/fav-cr-icon.png" />
+    <meta property="og:url" content="http://www.rutledgeismyname.com" />
+    <meta property="og:site_name" content="rutledgeismyname.com" />
+    <meta
+      property="og:description"
+      content="Junior Web Developer currently working in Philadelphia, PA"
+    />
+    <meta name="twitter:title" content="Chris Rutledge" />
+    <meta name="twitter:image" content="images/fav-cr-icon.png" />
+    <meta name="twitter:url" content="http://www.rutledgeismyname.com" />
+    <meta name="twitter:card" content="images/fav-cr-icon.png" />
+    <link rel="stylesheet" href="concept.css" />
+  </head>
+
+  <style>
+    pre code {
+      background-color: #eee;
+      border: 1px solid #999;
+      white-space: pre-line;
+      padding-left: 5px;
+      width: 95%;
+      display: block;
+    }
+    .fa-home {
+      position: fixed;
+      top: 1%;
+      right: 2.5%;
+      color: #000;
+    }
+    .fa-home:hover {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.671);
+      transform: scale(1.2);
+      transition: 0.2s;
+    }
+    .fav-icon {
+      position: absolute;
+      top: 1%;
+      left: 2.5%;
+      width: 27px;
+      border-radius: 5px;
+    }
+    .fav-icon:hover {
+      cursor: pointer;
+      transform: rotate(360deg);
+      transition: 0.8s;
+      opacity: 0.9;
+    }
+    .time-stamp {
+      width: 90px;
+      font-size: 11px;
+      color: #919191;
+      background-color: #f2f2f2;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: inset 1px 1px 2px #ccc;
+      padding: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    @media only screen and (max-width: 620px) {
+      pre code {
+        width: 92%;
+      }
+    }
+  </style>
+  <body>
+    <a href="http://rutledgeismyname.com/"><i class="fa fa-home fa-2x"></i></a>
+    <a href="http://rutledgeismyname.com/"
+      ><img
+        src="images/fav-cr-icon.png"
+        class="fav-icon"
+        title="Chris Rutledge"
+        alt="Chris Rutledge Logo"
+    /></a>
+    <p style="text-align: center">Battery API</p>
+    <p class="time-stamp">Posted: 2/15/21</p>
+    <figure class="phone">
+      <div class="phone__card">
+        <div class="lorem">
+          <div class="battery"><i class="fa fa-battery-half"></i></div>
+        </div>
+      </div>
+      <p style="font-size: 11px; color: #999; text-align: center">
+        * Some browsers may not support this API feature
+      </p>
+    </figure>
+
+    <p>Code Resource</p>
+
+    <pre>
+      <code>
+        <p style="font-weight: bold;">HTML</p>
+        &lt;figure class="phone"&gt;
+        &lt;div class="phone__card"&gt;
+          &lt;div class="lorem"&gt;
+            &lt;div class="battery"&gt;<br>&lt;i class="fa fa-battery-half"&gt;&lt;/i&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/figure&gt;
+
+     <p style="font-weight: bold;">CSS</p>
+    .battery {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .fa-battery-full span {
+      font-family: arial !important;
+      font-weight: bold;
+    }
+    
+    <p style="font-weight: bold;">JavaScript</p>
+    const batteryPromise = navigator.getBattery();
+batteryPromise.then(batteryCallback);
+
+function batteryCallback(batteryObject) {
+  printBatteryStatus(batteryObject);
+}
+function printBatteryStatus(batteryObject) {
+  if (batteryObject.level >= 0.9) {
+    document.querySelector(
+      ".battery"
+    ).innerHTML = `${Math.trunc(
+      batteryObject.level * 100
+    )}%`;
+  }
+}
+        </code>
+        </pre>
+    <script src="https://use.fontawesome.com/c3d923fb3a.js"></script>
+    <script src="concept.js"></script>
+  </body>
+</html>
