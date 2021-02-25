@@ -1,1 +1,41 @@
-:root{--background-color-primary:#100f10;--background-color-dark:#1b1b1b;--background-color-light:#c651cd;--background-color-accent:#8739f9}body{background:var(--background-color-primary)}.album{background:var(--background-color-primary)}.card{background:var(--background-color-dark);color:#fff}.time-stamp{width:90px;font-size:11px;color:#ccc;background-color:var(--background-color-primary);border-radius:4px;text-align:center;padding:3px}.btn-accent{background:var(--background-color-accent);border:2px solid var(--background-color-primary);color:#fff;border-radius:4px}.btn-accent:hover{background:0 0;transition:.3s;border:2px solid var(--background-color-accent);color:#fff}
+:root{
+    --background-color-primary:#100f10;
+    --background-color-dark:#1b1b1b;
+    --background-color-light:#c651cd;
+    --background-color-accent:#8739f9;
+}
+body{
+    background: var(--background-color-primary);
+}
+
+.album{
+    background: var(--background-color-primary);
+}
+.card{
+    background: var(--background-color-dark);
+    color: #ffffff;
+}
+.time-stamp {
+    width: 90px;
+    font-size: 11px;
+    color: #ccc;
+    background-color:var(--background-color-primary);
+    border-radius: 4px;
+    text-align: center;
+    padding: 3px;
+   
+  }
+
+  .btn-accent{
+background: var(--background-color-accent);
+border: 2px solid var(--background-color-primary);
+color: #ffffff;
+border-radius: 4px;
+  }
+  .btn-accent:hover{
+    background: transparent;
+    transition: .3s;
+    border: 2px solid var(--background-color-accent);
+    color: #ffffff;
+  }
+  
