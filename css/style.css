@@ -12,8 +12,14 @@
     --medium-transition:.6s;
     --fast-transition:.2s;
 }
+
+
 body{
     background: var(--background-color-dark);
+}
+.light{
+  background: var(--background-color-light);
+  transition: var(--fast-transition);
 }
 .btn-component{
   background-color: var(--background-color-dark);
@@ -60,15 +66,15 @@ pre code {
 .container{
   margin-top: 50px;
 }
-.fa-home {
+.mode-switch {
   position: fixed;
   top: 1%;
   right: 2.5%;
-  color: var(--font-color-light);
+  color: var(--font-color-grey);
   z-index: 9999;
 
 }
-.fa-home:hover {
+.mode-switch:hover {
   cursor: pointer;
   color: var(--font-color-accent);
   transform: scale(1.2);
