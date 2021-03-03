@@ -1,41 +1,91 @@
 :root{
-    --background-color-primary:#100f10;
     --background-color-dark:#1b1b1b;
-    --background-color-light:#c651cd;
-    --background-color-accent:#8739f9;
+    --background-color-slate:#302E37;
+    --background-color-grey:#A0A0A0;
+    --background-color-light:#FAFAFA;
+    --background-color-accent:#04D361;
+    --font-color-light:#eeeeee;
+    --font-color-grey:#999999;
+    --font-color-dark:#1b1b1b;
+    --font-color-accent:#04D361;
+    --slow-transition: 1s;
+    --medium-transition:.6s;
+    --fast-transition:.2s;
 }
 body{
-    background: var(--background-color-primary);
-}
-
-.album{
-    background: var(--background-color-primary);
-}
-.card{
     background: var(--background-color-dark);
-    color: #ffffff;
+}
+a{
+  background-color: var(--background-color-dark);
+  color: var(--font-color-light) !important;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: capitalize !important;
+}
+a:hover{
+  color: var(--font-color-grey) !important;
+  transform: rotate(260deg);
+  transition:var(--fast-transition);
+}
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  white-space: pre-line;
+  padding-left: 5px;
+  width: 95%;
+  display: block;
+}
+.card-title{
+  font-size: 24px !important;
+  color: var(--background-color-slate) !important;
+  font-weight: bold !important;
+}
+.container{
+  margin-top: 50px;
+}
+.fa-home {
+  position: fixed;
+  top: 1%;
+  right: 2.5%;
+  color: var(--font-color-light);
+}
+.fa-home:hover {
+  cursor: pointer;
+  color: var(--font-color-accent);
+  transform: scale(1.2);
+  transition:var(--fast-transition);
+}
+.fav-icon {
+  position: absolute;
+  top: 1%;
+  left: 2.5%;
+  width: 27px;
+  border-radius: 5px;
+}
+.fav-icon:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: 0.8s;
+  opacity: 0.9;
+}
+.green{
+  background-color: var(--background-color-accent) !important;
 }
 .time-stamp {
-    width: 90px;
-    font-size: 11px;
-    color: #ccc;
-    background-color:var(--background-color-primary);
-    border-radius: 4px;
-    text-align: center;
-    padding: 3px;
-   
-  }
+  width: 100px;
+  font-size: 12px;
+  color: var(--font-color-grey);
+  background-color:var(--background-color-light);
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,.2);
+  border-radius: 4px;
+  text-align: center;
+  padding: 3px;
+}
 
-  .btn-accent{
-background: var(--background-color-accent);
-border: 2px solid var(--background-color-primary);
-color: #ffffff;
-border-radius: 4px;
+@media only screen and (max-width: 992px) {
+  .card-title{
+    font-size: 18px !important;
   }
-  .btn-accent:hover{
-    background: transparent;
-    transition: .3s;
-    border: 2px solid var(--background-color-accent);
-    color: #ffffff;
-  }
-  
+ }
