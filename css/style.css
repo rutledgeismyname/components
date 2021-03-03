@@ -16,11 +16,12 @@
 
 body{
     background: var(--background-color-dark);
+    transition: var(--medium-transition);
 }
 
 body.light-bg{
   background: var(--background-color-light);
-  transition: var(--medium-transition);
+  
 }
 .btn-component{
   background-color: var(--background-color-dark);
