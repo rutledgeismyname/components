@@ -17,9 +17,10 @@
 body{
     background: var(--background-color-dark);
 }
-.light{
+
+body.light-bg{
   background: var(--background-color-light);
-  transition: var(--fast-transition);
+  transition: var(--medium-transition);
 }
 .btn-component{
   background-color: var(--background-color-dark);
@@ -33,7 +34,7 @@ body{
   
 }
 .btn-component:hover{
-  transform: scale(.93);
+  transform: scale(.94);
   transition:var(--fast-transition);
 }
 .btn-component:active, .btn-component:focus{
@@ -63,6 +64,7 @@ pre code {
   color: var(--background-color-slate) !important;
   font-weight: bold !important;
 }
+
 .container{
   margin-top: 50px;
 }
@@ -76,9 +78,8 @@ pre code {
 }
 .mode-switch:hover {
   cursor: pointer;
-  color: var(--font-color-accent);
-  transform: scale(1.2);
   transition:var(--fast-transition);
+  opacity: .8;
 }
 .fav-icon {
   position: absolute;
