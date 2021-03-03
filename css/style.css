@@ -15,7 +15,7 @@
 body{
     background: var(--background-color-dark);
 }
-a{
+.btn-component{
   background-color: var(--background-color-dark);
   color: var(--font-color-light) !important;
   padding: 10px;
@@ -23,19 +23,34 @@ a{
   border-radius: 4px;
   text-decoration: none;
   text-transform: capitalize !important;
+  border:none;
+  
 }
-a:hover{
-  color: var(--font-color-grey) !important;
-  transform: rotate(260deg);
+.btn-component:hover{
+  transform: scale(.93);
   transition:var(--fast-transition);
+}
+.btn-component:active, .btn-component:focus{
+  color: var(--font-color-light) !important;
+  background-color: var(--background-color-accent);
 }
 pre code {
   background-color: #eee;
   border: 1px solid #999;
   white-space: pre-line;
   padding-left: 5px;
-  width: 95%;
+  width: 100%;
   display: block;
+}
+.code-heading{
+  font-weight: bold; 
+  color:var(--font-color-accent); 
+  padding:2px;
+   background: var(--background-color-slate);
+    width: 50px; 
+    font-size: 12px;
+     border-radius: 4px;
+      text-align: center;
 }
 .card-title{
   font-size: 24px !important;
@@ -50,6 +65,8 @@ pre code {
   top: 1%;
   right: 2.5%;
   color: var(--font-color-light);
+  z-index: 9999;
+
 }
 .fa-home:hover {
   cursor: pointer;
