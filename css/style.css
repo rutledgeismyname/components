@@ -67,6 +67,15 @@ pre code {
 .card-title.light-card-title{
   color: var(--background-color-dark) !important;
 }
+.chip-container{
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.chip-container::-webkit-scrollbar{
+  display: none;
+}
 .chip:hover{
 background-color: var(--background-color-accent);
 color: var(--font-color-dark);
