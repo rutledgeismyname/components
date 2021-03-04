@@ -35,4 +35,22 @@ darkMode.addEventListener('click', function () {
   cardTitles[i].classList.remove('light-card-title');
   }
 });
-  
+
+// Filter from tags
+
+$(document).ready(function(){
+  $(".chip").click(function(){
+      var value = $(this).attr('data-filter');
+      if(value == "view-all"){
+          $('.filter').show('1000');
+      }
+      else{
+          $(".filter").not('.'+value).hide('3000');
+          $('.filter').filter('.'+value).show('3000');
+      }
+  });
+  if ($(".chip").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+});

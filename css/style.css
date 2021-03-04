@@ -67,6 +67,13 @@ pre code {
 .card-title.light-card-title{
   color: var(--background-color-dark) !important;
 }
+.chip:hover{
+background-color: var(--background-color-accent);
+color: var(--font-color-dark);
+transition: var(--fast-transition);
+cursor: pointer;
+}
+
 .code-heading{
   color:var(--font-color-ac); 
   padding:3px;
