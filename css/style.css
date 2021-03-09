@@ -33,7 +33,7 @@ pre code {
 .btn-component{
   background-color: var(--background-color-dark);
   color: var(--font-color-light) !important;
-  padding: 10px;
+  padding: 7px;
   font-size: 12px;
   border-radius: 4px;
   text-decoration: none;
@@ -42,12 +42,14 @@ pre code {
   
 }
 .btn-component:hover{
-  transform: scale(.94);
   transition:var(--fast-transition);
+  opacity: .7;
+  color: var(--font-color-light) !important;
 }
 .btn-component:active, .btn-component:focus{
   color: var(--font-color-light) !important;
-  background-color: var(--background-color-accent);
+  background-color: var(--background-color-dark);
+  opacity: 1;
 }
 .card{
   background: var(--background-color-slate);
@@ -127,9 +129,8 @@ cursor: pointer;
 .time-stamp {
   width: 100px;
   font-size: 12px;
-  color: var(--font-color-light);
-  background-color:var(--background-color-dark);
-  box-shadow: inset 1px 1px 2px rgba(0,0,0,.2);
+  color: var(--font-color-grey);
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,.3);
   border-radius: 4px;
   text-align: center;
   padding: 3px;
