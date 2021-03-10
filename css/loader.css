@@ -28,17 +28,5 @@
         background: url(/images/preloader.gif) center no-repeat var(--background-color-dark);
    
       }
-      .se-pre-con p{
-        color: var(--font-color-grey);
-        position: fixed;
-        left: 50%;
-        font-size: 13px;
-        top: 52%;
-        border: 0px solid white;
-        border-radius: 13px;
-        transform: translate(-50%, 50%);
-        font-weight: bold;
-        letter-spacing: 1px;
 
-      }
       
