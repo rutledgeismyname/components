@@ -25,27 +25,20 @@
         width: 100%;
         height: 100%;
         z-index: 9999;
-        background: url(/images/coffee.gif) center no-repeat var(--background-color-dark);
+        background: url(/images/preloader.gif) center no-repeat var(--background-color-dark);
    
       }
       .se-pre-con p{
-        color: var(--font-color-light);
+        color: var(--font-color-grey);
         position: fixed;
         left: 50%;
-        font-size: 14px;
-        top: 57%;
+        font-size: 13px;
+        top: 52%;
         border: 0px solid white;
         border-radius: 13px;
         transform: translate(-50%, 50%);
         font-weight: bold;
+        letter-spacing: 1px;
+
       }
-      .se-pre-con img{
-        width: 20px;
-        position: fixed;
-        left: 50%;
-        top: 51%;
-        border: 0px solid white;
-        border-radius: 100px;
-        transform: translate(-50%, 50%);
-     
-      }
+      
