@@ -3,5 +3,5 @@
 
 $(window).load(function() {
 
-  $('.se-pre-con').delay(1600).fadeOut('fast');
+  $('.se-pre-con').delay(1400).fadeOut('fast');
 });
