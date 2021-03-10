@@ -102,15 +102,15 @@
         <div class="col-md-6 col-xs-12 filter css">
           <div class="card sticky-action">
             <div class="card-image">
-              <img src="/images/iPhone-template.jpg" class="activator" alt="iPhone-template" title="iPhone-template">
-              <span class="btn-floating halfway-fab waves-effect waves-light red activator tooltipped" data-position="left" data-tooltip="Source Code" data-delay="0"><i class="material-icons" >priority_high</i></span>
+              <img src="/images/iPhone-template.jpg" class="activator" alt="Pure CSS iPhone" title="Pure CSS iPhone">
+              <span class="btn-floating halfway-fab waves-effect waves-light green activator tooltipped" data-position="left" data-tooltip="Source Code" data-delay="0"><i class="material-icons" >code</i></span>
             </div>
             <div class="card-content">
               <span class="card-title">Pure CSS iPhone Template</span>
               <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
             </div>
             <div class="card-action">
-              <a class="btn-component waves-effect waves-light" style="opacity: .5;">Coming Soon...</a>
+              <a class="btn-component waves-effect waves-light" href="/projects/iphone-template-css/index.html">View Component</a>
               <span class="time-stamp right">Posting: 3/11/21</a>
             </div>
             <div class="card-reveal">
@@ -118,7 +118,96 @@
                 >Source Code<i class="material-icons right">close</i></span
               >
               <p>
-                Coming Soon...
+                <pre>
+                  <code>
+                    <p class="code-heading">HTML</p>
+                    &lt;div class="container"&gt;
+                    &lt;div class="phone"&gt;&lt;/div&gt;
+                    &lt;div class="gradient"&gt;
+                      &lt;img src="images/apple.png" class="apple-logo" /&gt;
+                    &lt;/div&gt;
+                    &lt;div class="head-bar"&gt;&lt;/div&gt;
+                    &lt;div class="btn-switch"&gt;&lt;/div&gt;
+                    &lt;div class="btn-volume-1"&gt;&lt;/div&gt;
+                    &lt;div class="btn-volume-2"&gt;&lt;/div&gt;
+                  &lt;/div&gt;<br>
+                 <p class="code-heading">CSS</p>
+                 .container {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom:90px;
+                  margin-top: 30px;
+                  position: relative;
+                }
+                .phone {
+                  width: 280px;
+                  height: 590px;
+                  border-radius: 60px;
+                  background-color: #606060;
+                  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.35));
+                }
+                .gradient {
+                  width: 280px;
+                  height: 590px;
+                  border-radius: 60px;
+                  border: 13px black solid;
+                  background-image: url("https://wallpaperaccess.com/full/1340138.jpg");
+                  background-size: cover;
+                  background-position: center center;
+                  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.35));
+                  position: absolute;
+                  top: 0px;
+                }
+                .head-bar {
+                  background-color: #000;
+                  width: 160px;
+                  height: 35px;
+                  border-bottom-left-radius: 20px;
+                  border-bottom-right-radius: 20px;
+                  position: absolute;
+                  top: 0px;
+                }
+                .btn-switch {
+                  background-color: #000;
+                  width: 9px;
+                  height: 40px;
+                  border-radius: 4.5px;
+                  position: relative;
+                  bottom: 190px;
+                  left: -285px;
+                }
+                .btn-volume-1 {
+                  background-color: #000;
+                  width: 9px;
+                  height: 90px;
+                  border-radius: 4.5px;
+                  position: relative;
+                  bottom: 110px;
+                  left: -295px;
+                }
+                .btn-volume-2 {
+                  background-color: #000;
+                  width: 9px;
+                  height: 90px;
+                  border-radius: 4.5px;
+                  position: relative;
+                  bottom: 10px;
+                  left: -303px;
+                }
+                .apple-logo {
+                  max-width: 55px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.2));
+                }
+                    </code>
+                    </pre>
               </p>
             </div>
           </div>

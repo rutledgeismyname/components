@@ -1,39 +1,164 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>iPhone 12 Template</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pure CSS iPhone Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Junior front-end web developer currently working in Philadelphia, PA"
+    />
+    <meta
+      name="keywords"
+      content="Chris Rutledge, rutledgeismyname, rutledge, digital developer"
+    />
+    <meta name="author" content="Christopher Rutledge" />
+    <link rel="icon" type="image/png" href="images/fav-cr-icon.png" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="Chris Rutledge" />
+    <meta property="og:image" content="images/fav-cr-icon.png" />
+    <meta property="og:url" content="http://www.rutledgeismyname.com" />
+    <meta property="og:site_name" content="rutledgeismyname.com" />
+    <meta
+      property="og:description"
+      content="Junior Web Developer currently working in Philadelphia, PA"
+    />
+    <meta name="twitter:title" content="Chris Rutledge" />
+    <meta name="twitter:image" content="images/fav-cr-icon.png" />
+    <meta name="twitter:url" content="http://www.rutledgeismyname.com" />
+    <meta name="twitter:card" content="images/fav-cr-icon.png" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
+
   <style>
-    .container {
+    :root {
+      font-family: arial;
+    }
+ 
+    pre code {
+      background-color: #eee;
+      border: 1px solid #999;
+      white-space: pre-line;
+      padding-left: 5px;
+      width: 95%;
+      display: block;
+    }
+    .fa-home {
+      position: fixed;
+      top: 1%;
+      right: 2.5%;
+      color: black;
+    }
+    .fa-home:hover {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.671);
+      transform: scale(1.2);
+      transition: 0.2s;
+    }
+    .fav-icon {
+      position: absolute;
+      top: 1%;
+      left: 2.5%;
+      width: 27px;
+      border-radius: 5px;
+    }
+    .fav-icon:hover {
+      cursor: pointer;
+      transform: rotate(360deg);
+      transition: 0.8s;
+      opacity: 0.9;
+    }
+    .time-stamp {
+      width: 90px;
+      font-size: 11px;
+      color: rgb(145, 145, 145);
+      background-color: rgb(242, 242, 242);
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: inset 1px 1px 2px #ccc;
+      padding: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+    @media only screen and (max-width: 620px) {
+      pre code {
+        width: 88%;
+      }
+    }
+  </style>
+  <body>
+    <a href="/"><i class="fa fa-home fa-2x"></i></a>
+    <a href="http://rutledgeismyname.com/"
+      ><img
+        src="images/fav-cr-icon.png"
+        class="fav-icon"
+        title="Chris Rutledge"
+        alt="Chris Rutledge Logo"
+    /></a>
+    <p style="text-align: center">Pure CSS iPhone Template</p>
+    <p class="time-stamp">Posted: 3/11/21</p>
+    <div class="container">
+      <div class="phone"></div>
+      <div class="gradient">
+        <img src="images/apple.png" class="apple-logo" />
+      </div>
+      <div class="head-bar"></div>
+      <div class="btn-switch"></div>
+      <div class="btn-volume-1"></div>
+      <div class="btn-volume-2"></div>
+    </div>
+    <p>Code Resource</p>
+    <pre>
+      <code>
+        <p style="font-weight: bold;">HTML</p>
+        &lt;div class="container"&gt;
+        &lt;div class="phone"&gt;&lt;/div&gt;
+        &lt;div class="gradient"&gt;
+          &lt;img src="images/apple.png" class="apple-logo" /&gt;
+        &lt;/div&gt;
+        &lt;div class="head-bar"&gt;&lt;/div&gt;
+        &lt;div class="btn-switch"&gt;&lt;/div&gt;
+        &lt;div class="btn-volume-1"&gt;&lt;/div&gt;
+        &lt;div class="btn-volume-2"&gt;&lt;/div&gt;
+      &lt;/div&gt;<br>
+     <p style="font-weight: bold;">CSS</p>
+     .container {
       display: flex;
       align-items: center;
       justify-content: center;
-      top: 25px;
+      margin-bottom:90px;
+      margin-top: 30px;
       position: relative;
     }
     .phone {
-      width: 400px;
-      height: 843px;
-      border-radius: 66px;
+      width: 280px;
+      height: 590px;
+      border-radius: 60px;
       background-color: #606060;
-      filter: drop-shadow(20px 30px 15px rgba(0, 0, 0, 0.25));
+      filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.35));
     }
     .gradient {
-      width: 400px;
-      height: 843px;
-      border-radius: 68px;
+      width: 280px;
+      height: 590px;
+      border-radius: 60px;
       border: 13px black solid;
       background-image: url("https://wallpaperaccess.com/full/1340138.jpg");
       background-size: cover;
       background-position: center center;
-      filter: drop-shadow(20px 30px 15px rgba(0, 0, 0, 0.45));
+      filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.35));
       position: absolute;
       top: 0px;
     }
     .head-bar {
       background-color: #000;
-      width: 200px;
-      height: 40px;
+      width: 160px;
+      height: 35px;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
       position: absolute;
@@ -45,18 +170,17 @@
       height: 40px;
       border-radius: 4.5px;
       position: relative;
-      top: -280px;
-      left: -405px;
+      bottom: 190px;
+      left: -285px;
     }
-
     .btn-volume-1 {
       background-color: #000;
       width: 9px;
       height: 90px;
       border-radius: 4.5px;
       position: relative;
-      bottom: 190px;
-      left: -414px;
+      bottom: 110px;
+      left: -295px;
     }
     .btn-volume-2 {
       background-color: #000;
@@ -64,12 +188,11 @@
       height: 90px;
       border-radius: 4.5px;
       position: relative;
-      bottom: 80px;
-      left: -423px;
+      bottom: 10px;
+      left: -303px;
     }
-
     .apple-logo {
-      max-width: 65px;
+      max-width: 55px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -79,17 +202,8 @@
       transform: translate(-50%, -50%);
       filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.2));
     }
-  </style>
-  <body>
-    <div class="container">
-      <div class="phone"></div>
-      <div class="gradient">
-        <img src="apple.png" class="apple-logo" />
-      </div>
-      <div class="head-bar"></div>
-      <div class="btn-switch"></div>
-      <div class="btn-volume-1"></div>
-      <div class="btn-volume-2"></div>
-    </div>
+        </code>
+        </pre>
+    <script src="https://use.fontawesome.com/c3d923fb3a.js"></script>
   </body>
 </html>
