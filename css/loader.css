@@ -1,4 +1,17 @@
-
+:root{
+  --background-color-dark:#1b1b1b;
+  --background-color-slate:#302E37;
+  --background-color-grey:#A0A0A0;
+  --background-color-light:#FAFAFA;
+  --background-color-accent:#04D361;
+  --font-color-light:#eeeeee;
+  --font-color-grey:#999999;
+  --font-color-dark:#1b1b1b;
+  --font-color-accent:#04D361;
+  --slow-transition: 1s;
+  --medium-transition:.6s;
+  --fast-transition:.3s;
+}
  
  /* Paste this css to your style sheet file or under head tag */
       /* This only works with JavaScript, 
@@ -12,6 +25,28 @@
         width: 100%;
         height: 100%;
         z-index: 9999;
-        background: url(/images/preloader.gif) center no-repeat #000;
-        filter: grayscale(100%);
+        background: url(/images/coffee.gif) center no-repeat #000;
+   
+      }
+      .se-pre-con p{
+        color: var(--font-color-light);
+        position: fixed;
+        left: 50%;
+        font-size: 15px;
+        top: 56%;
+        border: 0px solid white;
+        border-radius: 13px;
+        transform: translate(-50%, 50%);
+     
+      }
+      .se-pre-con img{
+        width: 20px;
+        position: fixed;
+        left: 50%;
+        top: 51%;
+        border: 0px solid white;
+        border-radius: 100px;
+        transform: translate(-50%, 50%);
+        
+     
       }
