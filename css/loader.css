@@ -25,7 +25,7 @@
         width: 100%;
         height: 100%;
         z-index: 9999;
-        background: url(/images/coffee.gif) center no-repeat #000;
+        background: url(/images/coffee.gif) center no-repeat var(--background-color-dark);
    
       }
       .se-pre-con p{
