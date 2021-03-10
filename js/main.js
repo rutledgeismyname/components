@@ -1,4 +1,5 @@
 'use strict';
+
 // Dark / light mode declare
 const lightMode = document.querySelector('.fa-sun-o');
 const darkMode = document.querySelector('.fa-moon-o');
