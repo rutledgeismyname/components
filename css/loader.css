@@ -32,12 +32,12 @@
         color: var(--font-color-light);
         position: fixed;
         left: 50%;
-        font-size: 15px;
+        font-size: 14px;
         top: 57%;
         border: 0px solid white;
         border-radius: 13px;
         transform: translate(-50%, 50%);
-     
+        font-weight: bold;
       }
       .se-pre-con img{
         width: 20px;
@@ -47,6 +47,5 @@
         border: 0px solid white;
         border-radius: 100px;
         transform: translate(-50%, 50%);
-        
      
       }
