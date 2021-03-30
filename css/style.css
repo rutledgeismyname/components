@@ -55,6 +55,7 @@ pre code {
   background: var(--background-color-slate);
   color: var(--font-color-light);
   transition: var(--fast-transition);
+
 }
 .card.light-card{
   background: var(--background-color-light);
@@ -65,6 +66,9 @@ pre code {
   color: var(--background-color-light) !important;
   font-weight: bold !important;
   transition: var(--fast-transition);
+}
+.card p{
+  font-size: 14px;
 }
 .card-title.light-card-title{
   color: var(--background-color-dark) !important;
@@ -136,6 +140,7 @@ cursor: pointer;
   padding: 3px;
 }
 @media only screen and (max-width: 992px) {
+
   .card-title{
     font-size: 18px !important;
   }
