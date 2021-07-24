@@ -3,15 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Battery API</title>
+    <title>Apple Music Interface</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Junior front-end web developer currently working in Philadelphia, PA"
-    />
-    <meta
-      name="keywords"
-      content="Chris Rutledge, rutledgeismyname, rutledge, digital developer"
+    <meta name="description" content="Junior front-end web developer currently working in Philadelphia, PA"/>
+    <meta name="keywords" content="Chris Rutledge, rutledgeismyname, rutledge, digital developer"
     />
     <meta name="author" content="Christopher Rutledge" />
     <link rel="icon" type="image/png" href="images/fav-cr-icon.png" />
@@ -28,34 +23,54 @@
     <meta name="twitter:image" content="images/fav-cr-icon.png" />
     <meta name="twitter:url" content="http://www.rutledgeismyname.com" />
     <meta name="twitter:card" content="images/fav-cr-icon.png" />
+        <!-- Custom CSS Template -->
     <link rel="stylesheet" href="concept.css" />
-    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/header.css" />
   </head>
+
+  
   <body>
-    <a href="/"><i class="fa fa-home fa-2x"></i></a>
-    <a href="http://rutledgeismyname.com/"
-      ><img
-        src="images/fav-cr-icon.png"
-        class="fav-icon"
-        title="Chris Rutledge"
-        alt="Chris Rutledge Logo"
-    /></a>
-    <p style="text-align: center">Battery API</p>
-    <p class="time-stamp">Posted: 2/16/21</p>
+    <a href="/">
+      <i class="fa fa-home fa-2x"></i>
+    </a>
+    <a href="http://rutledgeismyname.com/">
+      <img src="images/fav-cr-icon.png" class="fav-icon" title="Chris Rutledge" alt="Chris Rutledge Logo" />
+    </a>
+    <p style="text-align: center">Apple Music Interface</p>
+    <p class="time-stamp">Posted: 7/24/21</p>
     <figure class="phone">
+      <div class="top-bar"></div>
+      <div class="gradient-left"></div>
+      <div class="gradient-right"></div>
       <div class="phone__card">
-        <div class="lorem">
-          <div class="battery"><i class="fa fa-battery-half"></i></div>
+        <div class="album-card">
+          <img src="/projects/apple-music/images/album-artwork.jpg" class="album-artwork" alt="Social House" title="Social House">
+        </div>
+        <!-- Album and Song Titles -->
+        <p class="song-title">
+          <span>Magic in the Hamptons (feat. Lil Yachty)</span> 
+          <span>Magic in the Hamptons (feat. Lil Yachty)</span>
+          <span>Magic in the Hamptons (feat. Lil Yachty)</span>
+          <span>Magic in the Hamptons (feat. Lil Yachty)</span>
+        </p>
+        <p class="album-title">Social House</p>
+        <!-- Scrub Bar -->
+        <div class="scrub-bar">
+          <div class="scrub-dot"></div>
+          <div class="scrub-time-start">0.03</div>
+          <div class="scrub-time-end">-2.41</div>
+        </div>
+        <div class="controls">
+          <div class="rewind"><i class="fa fa-backward fa-2x"></i></div>
+          <div class="play"><i class="fa fa-play fa-2x"></i></div>
+          <div class="fast-forward"><i class="fa fa-forward fa-2x"></i></div>
         </div>
       </div>
-      <p style="font-size: 11px; color: #999; text-align: center">
-        * Some browsers may not support this API feature (including iOS Safari)
-      </p>
     </figure>
 
-    <p>Code Resource</p>
+   <!--  <p>Code Resource</p>
 
-    <pre>
+  <pre>
       <code>
         <p style="font-weight: bold;">HTML</p>
         &lt;figure class="phone"&gt;
@@ -93,7 +108,7 @@ function printBatteryStatus(batteryObject) {
   }
 }
         </code>
-        </pre>
+        </pre>-->
     <script src="https://use.fontawesome.com/c3d923fb3a.js"></script>
     <script src="concept.js"></script>
   </body>

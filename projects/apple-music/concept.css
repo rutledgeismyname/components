@@ -1,0 +1,177 @@
+:root {
+  font-family: arial;
+}
+.phone {
+  width: 264px;
+  height: 533px;
+  padding: 8px;
+  border-radius: 36px;
+  box-shadow: 0 50px 100px -20px rgb(50 50 93/ 25%),
+    0 30px 60px -30px rgb(0 0 0 / 30%), inset 0 -2px 6px 0 rgb(10 37 65 / 30%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-64%, 0%);
+}
+.phone__card {
+  display: grid;
+  gap: 0.6rem;
+  padding: .3rem;
+  border-radius: 0.4rem;
+  margin: 0 0.8rem 9rem 0.8rem;
+}
+
+/* Top Bar */
+.top-bar{
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  width: 35px;
+  height: 4px;
+  transform: translate(-50%, 50%);
+  background: rgb(110, 110, 110);
+  border-radius: 5px;
+
+}
+/* Gradients */
+.gradient-left{
+  background-image: linear-gradient(to right, white , transparent);;
+  height: 100%;
+  width: 20px;
+  z-index: 99999;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+.gradient-right{
+  background-image: linear-gradient(to right, transparent , white);;
+  height: 100%;
+  width: 20px;
+  z-index: 99999;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 0;
+}
+
+/* Album, Song, Title Details */
+.album-card{
+  display: grid;
+  gap: 0.2rem;
+  padding: 1.3rem;
+  border-radius: 0.4rem;
+  margin: 0 auto;
+}
+.album-artwork{
+  width: 100%;
+  border-radius: .4rem;
+  filter: drop-shadow(0px 8px 12px rgba(0,0,0,.35));
+  margin: 9rem 0rem 2rem 0rem;
+}
+.song-title{
+  color: black;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0px;
+  white-space:nowrap;
+  overflow-x: hidden;
+  animation: slide 37s linear infinite;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+span:nth-child(2){
+  padding-left: 20px;
+}
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+.album-title{
+  color: red;
+  font-size: 1rem;
+  white-space:nowrap;
+  overflow-x: hidden;
+  margin: -6px 0 0 0;
+  padding: 0px;
+  font-weight: lighter;
+}
+/* End Album, Song, Title Details */
+
+/* Scrub Bar */
+.scrub-bar{
+  width: 100%;
+  height: 2px;
+  background-color:rgba(0,0,0,.35);
+  border-radius: 10%;
+  margin: .8rem 0rem 0rem 0rem;  
+}
+.scrub-dot{
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background: rgb(101, 101, 101);
+  border-radius: 100%;
+  top: -3px;
+  left: 7px;
+  z-index: 9999;
+}
+
+.scrub-time-start{
+ color: rgb(101, 101, 101);
+ font-size: .6rem;
+ letter-spacing: 1px;
+ position: relative;
+ top: 0;
+ left: 0;
+ text-align: left;
+}
+.scrub-time-end{
+  color: rgb(101, 101, 101);
+  font-size: .6rem;
+  letter-spacing: 1px;
+  position: relative;
+  width: 100%;
+  right: 0;
+  top: -10px;
+  text-align: right;
+}
+
+/* Controls */
+.controls{
+  width: 100%;
+
+}
+.rewind{
+  color: black;
+  font-size: 1rem;
+  position: relative;
+  left: 15px;
+  top: 30px;
+  text-align: left;
+}
+.play{
+  color: black;
+  font-size: 1rem;
+  position: relative;
+  left: 0;
+  top: 0;
+  text-align: center;
+
+}
+.fast-forward{
+  color: black;
+  font-size: 1rem;
+  position: relative;
+  right: 15px;
+  top: -30px;
+  text-align: right;
+}
