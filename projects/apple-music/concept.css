@@ -85,7 +85,6 @@
   white-space:nowrap;
   overflow-x: hidden;
   animation: slide 37s linear infinite;
-  animation-delay: 5s;
   animation-iteration-count: infinite;
 }
 span:nth-child(2){
