@@ -87,6 +87,12 @@
   animation: slide 37s linear infinite;
   animation-delay: 5s;
   animation-iteration-count: infinite;
+  -webkit-animation: slide 37s linear infinite;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: slide 37s linear infinite;
+  -moz-animation-delay: 5s;
+  -moz-animation-iteration-count: infinite;
 }
 span:nth-child(2){
   padding-left: 20px;
