@@ -39,7 +39,9 @@
 }
 /* Gradients */
 .gradient-left{
-  background-image: linear-gradient(to right, white , transparent);;
+  background-image: linear-gradient(to right, white , transparent);
+  -webkit-background-image: linear-gradient(to right, white , transparent);
+  -moz-background-image: linear-gradient(to right, white , transparent);
   height: 100%;
   width: 20px;
   z-index: 99999;
@@ -49,7 +51,9 @@
   left: 0;
 }
 .gradient-right{
-  background-image: linear-gradient(to right, transparent , white);;
+  background-image: linear-gradient(to right, transparent , white);
+  -webkit-background-image: linear-gradient(to right, transparent , white);
+  -moz-background-image: linear-gradient(to right, transparent , white);
   height: 100%;
   width: 20px;
   z-index: 99999;
