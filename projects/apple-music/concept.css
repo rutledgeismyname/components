@@ -39,9 +39,9 @@
 }
 /* Gradients */
 .gradient-left{
-  background-image: linear-gradient(to right, white , transparent);
-  -webkit-background-image: linear-gradient(to right, white , transparent);
-  -moz-background-image: linear-gradient(to right, white , transparent);
+  background-image: linear-gradient(to right, white , rgba(255, 255, 255, 0));
+  -webkit-background-image: linear-gradient(to right, white ,rgba(255, 255, 255, 0));
+  -moz-background-image: linear-gradient(to right, white ,rgba(255, 255, 255, 0));
   height: 100%;
   width: 20px;
   z-index: 99999;
