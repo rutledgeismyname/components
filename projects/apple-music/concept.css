@@ -67,7 +67,7 @@
 .album-card{
   display: grid;
   gap: 0.2rem;
-  padding: 1.3rem;
+  padding: .5rem;
   border-radius: 0.4rem;
   margin: 0 auto;
 }
@@ -170,6 +170,7 @@ span:nth-child(2){
   text-align: center;
 
 }
+
 .fast-forward{
   color: black;
   font-size: 1rem;
@@ -177,4 +178,34 @@ span:nth-child(2){
   right: 15px;
   top: -30px;
   text-align: right;
+}
+
+.lyrics, .heart, .shuffle{
+  color: red;
+  font-size: 1.2rem;
+}
+
+.lyrics{
+  left: 55px;
+  bottom:37px;
+  text-align: left;
+  position: absolute;
+}
+.lyrics:hover, .heart:hover, .shuffle:hover{
+  color: rgb(166, 0, 0);
+  cursor: pointer;
+  transition: .3s;
+}
+.heart{
+  left: 50%;
+  bottom: 35px;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  position: absolute;
+}
+.shuffle{
+  right: 55px;
+  bottom:35px;
+  text-align: right;
+  position:absolute;
 }
