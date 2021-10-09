@@ -1,0 +1,76 @@
+@import "./variables";
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+@mixin gridCenter {
+    display: grid;
+    place-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @include flexCenter();
+    height: 100vh;
+    overflow: hidden;
+    background-color: $backgroundColor;
+}
+
+.insta{
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at 30% 107%, $instaYellow 0%, $instaYellow 5%, $instaOrange 45%, $instaRed 60%, $instaBlue 90%);
+    border-radius: 35px;
+    display: grid;
+    place-items: center;
+    filter: drop-shadow(0 0mm 3mm rgba(153,153,153, .5));
+    animation: UpDown .7s infinite alternate;
+
+}
+
+@keyframes UpDown{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-7px);
+    }
+}
+
+.innerbox{
+    width: 120px;
+    height: 120px;
+    border:10px white solid;
+    border-radius: 32px;
+    @include gridCenter();
+    position: relative;
+}
+
+.innerbox::before{
+    content: '';
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 10px solid white;
+    background: transparent;
+    position: absolute;
+
+}
+
+.innerbox::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: white;
+    top: 8px;
+    right: 10px;
+}
